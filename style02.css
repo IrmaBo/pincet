@@ -1,0 +1,163 @@
+.popup-fade {
+    display: none;
+}
+.popup-fade:before {
+    content: '';
+    background: #000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    z-index: 9999;
+}
+.popup {
+    position: fixed;
+    top: 20%;
+    left: 40%;
+    padding: 20px;
+    margin-left: -100px;
+    z-index: 99998;
+    opacity: 1;
+
+    background-color: #fcf1ec;
+    background-image: url('img/note.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    border-radius: 40px;
+    height: 550px;
+    width: 700px;
+}
+.popup-close {
+    position: absolute;
+    top: 2vh;
+    right: 3vw;
+    color: #989797;
+}
+
+.popup-2 {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 40%;
+    padding: 20px;
+    margin-left: -100px;
+    z-index: 99999;
+    opacity: 1;
+    width: 350px;
+    height: 250px;
+    background-image: url('img/Background_popup-2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #fcf1ec;
+    border-radius: 40px;
+}
+
+.popup-close-2 {
+    position: absolute;
+    top: 2vh;
+    right: 1vw;
+    color: #989797;
+}
+
+.check_icon {
+  justify-content: center;
+}
+
+form {
+  margin-top: 8vh;
+  margin-left: 10vw;
+}
+
+.popup p {
+  display: flex;
+  justify-content: center;
+}
+
+form select, form input {
+  width: 330px;
+  height: 50px;
+  border-radius: 25px;
+  outline: none;
+  border-style: none;
+  color: #989797;
+  padding-left: 1.5vw;
+}
+
+input:focus {
+  color: black;
+}
+
+@media (max-width: 320px) {
+  .popup {
+      height: 400px!important;
+      width: 320px!important;
+      top: 0;
+      margin-left: -125px;
+      padding: 10px;
+      border-radius: 20px;
+  }
+
+  .popup-2 {
+      display: none;
+      position: relative;
+      top: -350px;
+      left: 100px;
+      width: 250px;
+      height: 200px;
+      border-radius: 20px;
+  }
+
+  .popup p {
+    font-family: 'MUSEOSANSCYRL', sans-serif;
+    font-size: 10px;
+  }
+
+  .popup-2 p {
+    font-family: 'MUSEOSANSCYRL', sans-serif;
+    font-size: 14px!important;
+  }
+
+  form {
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  form select, form input {
+    width: 300px!important;
+    height: 40px!important;
+  }
+
+#take_programm_button {
+  height: 100%!important;
+}
+
+}
+
+@media (max-width: 576px) {
+  .popup {
+      position: relative;
+      height: 400px;
+      width: 500px;
+      top: 0;
+      left: 80px;
+      padding: 10px;
+  }
+
+  .popup-2 {
+      display: none;
+      position: relative;
+      top: -420px;
+  }
+
+  .popup p {
+    font-size: 12px;
+  }
+
+  form {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}

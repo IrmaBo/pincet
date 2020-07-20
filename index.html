@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Pincet</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style02.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+  <div class="container-fluid main">
+  <div class="container-fluid parallax"></div>
+    <div class="container">
+  <!--Карта-->
+      <iframe id="map_google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2451.2515048970904!2d23.69607911601878!3d52.09335417973568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210bfa0846eda1%3A0x9d8826f6a26a2b91!2z0YPQuy4g0JPQvtCz0L7Qu9GPIDY1LCDQkdGA0LXRgdGCLCDQkdC10LvQsNGA0YPRgdGM!5e0!3m2!1sru!2sru!4v1595234831788!5m2!1sru!2sru"
+      width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" onmouseleave="this.style.display='none';" onmouseup="this.style.display='none';"></iframe>
+
+        <div class="container row header col-12 justify-content-center">
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+            <img class="img-fluid" src="img\logo.png">
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+              <img class="img-fluid pt-2 map" src="img\map.png" onmouseover="this.src = 'img/map-2.png'; document.getElementById('map_google').style.display='block';" onmouseout="this.src = 'img/map.png';">
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+            <img class="img-fluid pt-2" src="img\contact.png">
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12">
+<!--Всплывающее окно-->
+            <a class="popup-open" href="#"><img class="img-fluid pt-3 appointment_button" src="img\appointment_button.png"></a>
+            <div class="popup-fade">
+             <div class="popup">
+               <a class="popup-close" href="#">X</a>
+               <p><b style="padding-right:10px">Получите </b>программу обучения</p>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do<br>
+                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim<br>
+                 ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
+                <form>
+                <p><select>
+                      <option selected>Повышение квалификации 1</option>
+                      <option>Повышение квалификации 2</option>
+                      <option>Повышение квалификации 3</option>
+                     </select></p>
+                <p><input type="text" name="answer" value="Ваше имя" onfocus="this.value=''"></p>
+                <p><input type="text" name="answer" value="Номер телефона" onfocus="this.value=''"></p>
+
+                <a class="popup-open-2" href="#"><p><input type="image" id="take_programm_button" src="img\take_programm_button.png" alt="Отправить" style="outline: none; width: 100%; max-width: 400px; height:auto; border-radius: none; padding-left:0;"></p></a>
+               </form>
+
+            </div>
+           </div>
+
+
+            <div class="popup-2">
+               <a class="popup-close-2" href="#">X</a>
+               <img class="col-4 offset-4 mt-4" src="img\check.png">
+               <p class="col-8 offset-2 mt-4 pl-4" style="font-size: 18px;"><b>Ваш заказ принят.</b><br><span style="padding-left:0.3vw">Ожидайте звонка</span></p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row col-xl-12 col-lg-12 col-md-">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+             <div class="navbar-nav">
+             <a class="row nav-item nav-link active m-1" href="#">Главная<span class="sr-only">(current)</span></a>
+             <a class="row nav-item nav-link m-1" href="#">Шугаринг и депиляция воском</a>
+             <a class="row nav-item nav-link m-1" href="#">Антицеллюлитный массаж</a>
+             <a class="row nav-item nav-link m-1" href="#">Классический массаж</a>
+             <a class="row nav-item nav-link m-1" href="#">Обучение</a>
+             <a class="row nav-item nav-link m-1" href="#">Косметика для мастеров</a>
+             <a class="row nav-item nav-link m-1" href="#">Статьи</a>
+             <a class="row nav-item nav-link m-1" href="#">О студии</a>
+             <a class="row nav-item nav-link m-1" href="#">Контакты</a>
+            </div>
+          </div>
+       </nav>
+        </div>
+
+
+   <div class="big_text col-xl-5 c0l-lg-5 col-md-12 col-sm-12 offset-xl-1 offset-lg-1">
+     <p>Хотите избавиться от<br><b>нежелательных волос</b><br>или нужен сеанс<br><b>антицеллюлитного массажа?</b></p>
+   </div>
+
+<div class="services row">
+<div class="col-xl-5 c0l-lg-5 col-md-12 col-sm-12 offset-1">
+  <div class="row col-12"><div class="col-1 pl-0"><img src="img\ellipce.png"></div><p>депиляция воском и Шугаринг;</p></div>
+  <div class="row col-12"><div class="col-1 pl-0"><img src="img\ellipce.png"></div><p>профессиональные сертифицированные мастера;</p></div>
+  <div class="row col-12"><div class="col-1 pl-0"><img src="img\ellipce.png"></div><p>работаем и с женщинами, и с мужчинами;</p></div>
+  <div class="row col-12"><div class="col-1 pl-0"><img src="img\ellipce.png"></div><p>результат уже после первой процедуры.</p></div>
+  <div>
+                <a class="popup-open" href="#"><img class="col-12 pl-0 client_card_button" src="img\client_card_button.png"></a>
+                </div>
+  </div>
+
+  <div class="col-2">
+    <div class="col-12 client_card"><img src="img\client_card.png" style="margin-bottom: 5vh; max-width: 200px;"></div>
+
+
+    <a class="support" tabindex="1">
+     <div class="col-12" style="z-index:1; margin-top: -12vh; margin-left: 7vw;"><img class="pulse" src="img\info.png"></div>
+     <span class="tip">
+      <p>Lorem ipsum<br>dolor sit amet,<br>consectetur<br>adipisicing elit,<br>sed do eiusmod<br>tempor<br>incididunt ut<br>labore et<br>dolore magna</p>
+    </span>
+   </a>
+
+</div>
+
+</div>
+<div class="col-12" style="display: inline-flex; align-items: flex-end; justify-content: center"><img src="img\down_button.png"></div>
+</div>
+</div>
+
+
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <script src="https://yandex.st/jquery/2.1.1/jquery.min.js"></script>
+
+<!--Модальное окно Получить программу обучения-->
+    <script>
+$(document).ready(function($) {
+    $('.popup-open').click(function() {
+        $('.popup-fade').fadeIn();
+        return false;
+    });
+
+    $('.popup-close').click(function() {
+        $(this).parents('.popup-fade').fadeOut();
+        return false;
+    });
+
+    $(document).keydown(function(e) {
+        if (e.keyCode === 27) {
+            e.stopPropagation();
+            $('.popup-fade').fadeOut();
+        }
+    });
+
+    $('.popup-fade').click(function(e) {
+        if ($(e.target).closest('.popup').length == 0) {
+            $(this).fadeOut();
+        }
+    });
+});
+</script>
+
+<!--Модальное окно заказ принят-->
+<script>
+    $('.popup-open-2').click(function() {
+        $('.popup-2').fadeIn();
+        return false;
+    });
+
+    $('.popup-close-2').click(function() {
+      $('.popup-2').fadeOut();
+      $('.popup').parents('.popup-fade').fadeOut();
+        return false;
+    });
+
+    $('.popup-fade').click(function(e) {
+        if ($(e.target).closest('.popup-2').length == 0) {
+            $('.popup-2').fadeOut();
+        }
+    });
+</script>
+
+  </body>
+</html>
